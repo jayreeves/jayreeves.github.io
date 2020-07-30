@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <section id="top-section">
-            <h1>Hi! I'm Jay<br>Reeves</h1>
-            <img id="jay" src="res/jay-web.jpg">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()" onscroll="updateScroll()">
+    <div id="container">
+        <section>
+            <div class="centre">
+                <h1 id="title" class=" hidden smooth up">Hi! I'm Jay<br>Reeves</h1>
+                <img class="hidden smooth down" id="jay" src="res/jay-web.jpg">
+                <div class="hidden smooth left" id="links">
+                    <a href="#about-me">
+                        <p>about me</p>
+                    </a>
+                    <div id="squiggle">
+                        <img src="res/squiggle.gif">
+                    </div>
+                    <a href="#contact">
+                        <p>contact</p>
+                    </a>
+                </div>
+            </div>
         </section>
-    </body>
+        <section id="about-me">
+            <div class="centre">
+                <img id="brussels" src="https://pix10.agoda.net/hotelImages/4889924/0/b7365f7ff6ec5104d63e2260ab6becf4.jpg?s=1024x768">
+                <div class="side-text">
+                    <p>I am a Modern Languages (French and Spanish), Translation & Interpreting graduate from Newcastle University, with the experience of a placement year abroad in Brussels, Belgium.<br><br>Newcastle University helped to foster my passion for facilitating intercultural communication.<br><br>I am currently broadening my skillsets by studying a 150 hour Master TEFL course. </p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <a href="https://www.linkedin.com/in/jay-reeves-43306a1b4/">LinkedIn</a>
+        </section>
+    </div>
+    <a href=#>
+        <div class="smooth-fast hidden" id="scroll-top">
+            <p>^</p>
+        </div>
+    </a>
+
+</body>
+
 </html>
