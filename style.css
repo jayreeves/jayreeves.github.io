@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Recursive', sans-serif;
+    font-size: 100px;
+    position: absolute;
+    top: 10vh;
+    right: 60vw;
+    z-index: 1;
+    color: white;
+    background-color: black;
+    padding: 30px;
+}
+
+#jay{
+    position: absolute;
+    top:10vh;
+    right: 10vw;
+    height: 80vh;
+}
