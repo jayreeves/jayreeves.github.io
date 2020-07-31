@@ -6,6 +6,10 @@ body{
     margin: 0;
 }
 
+#container{
+    overflow-x: hidden;
+}
+
 h1 {
     font-family: 'Recursive', sans-serif;
     font-size: 10vh;
@@ -177,4 +181,87 @@ section{
 #contact-details{
     padding: 2vw;
     background-color: #7fc3e0;
+}
+
+@media (orientation: portrait) {
+
+    #jay{
+        height: 60vh;
+    }
+
+    #links{
+        margin-top: 3vh;
+        position: static;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .centre{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        top:0;
+        left:0;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        position: static;
+        margin-top:5vh;
+        left:0;
+        height: fit-content;
+        font-size: 10vw;
+    }
+
+    section{
+        padding: 0;
+        height: 100vh;
+    }
+
+
+    #brussels{
+        margin-top: 10vh;
+        height: 80vh;
+    }
+
+    .side-text{
+        position: absolute;
+        top:0;
+        left:10vw;
+        float: none;
+        background-color: rgba(0,0,0,0.6);
+        width: 70vw;
+        height: 40vh;
+        margin-top: 5vh;
+        padding: 2vh;
+        color: white;
+        font-size: 2vh;
+        font-family: 'Libre Baskerville', serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact p {
+        font-size: 4vw;
+        margin: 0;
+        margin-right: 5vw;
+        text-align: left;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    #contact a{
+        text-decoration: none;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 5vw;
+        color: #253d47;
+    }
 }
